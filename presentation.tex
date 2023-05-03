@@ -109,6 +109,7 @@
 }
 \ExplSyntaxOff
 
+\newcommand\Fontvi{\fontsize{10pt}{7.2}\selectfont}
 
 \title
     {Desde los campos magnéticos hasta la formación de planetas}
@@ -218,14 +219,127 @@
 	\end{frame}
 
 	\begin{frame}{SKA, la maquina de big data}
+		\Fontvi
 		\begin{columns}
 			\begin{column}{0.48\textwidth}
-
+				\begin{enumerate}
+					\item Fibra optica - 10 Tb/s
+					\item Central Signal Processing: Señal de los relojes saliendo para sincronizar los datos
+					\item Procesamiento de señales en el \textbf{dominio del tiempo} para señales astronomicas dependientes del tiempo - Ordenar, comprimir y promediar
+					\item Correlacion de los datos en el \textbf{dominio de la imagen} aumenta la cantidad de datos a $N_A^2$.
+					\item Science data processor: Forma las imágenes y los data products. Cubo de imágenes de 60,000 canales. $\sim$ 0.5 PB
+					\item Cada telescopio producirá $\sim$ 300 PB/año
+				\end{enumerate}
 			\end{column}
 			\begin{column}{0.48\textwidth}
-
+				\embedvideo*{\includegraphics[page=1, width=\textwidth, height=\textheight, keepaspectratio]{example-movie}}{./videos/ska_data_journey.mp4}
 			\end{column}
 		\end{columns}
+	\end{frame}
+
+	\begin{frame}{SKA, la maquina de big data}
+		
+		
+		
+		
+		\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+		
+		\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+			%uncomment if require: \path (0,234); %set diagram left start at 0, and has height of 234
+			
+			%Shape: Circle [id:dp7446071539455305] 
+			\draw  [fill={rgb, 255:red, 173; green, 229; blue, 241 }  ,fill opacity=1 ] (54,115) .. controls (54,57.56) and (100.56,11) .. (158,11) .. controls (215.44,11) and (262,57.56) .. (262,115) .. controls (262,172.44) and (215.44,219) .. (158,219) .. controls (100.56,219) and (54,172.44) .. (54,115) -- cycle ;
+			%Straight Lines [id:da7815800758060454] 
+			\draw    (331,-3) -- (331,242) ;
+			%Shape: Circle [id:dp1276830322186262] 
+			\draw  [fill={rgb, 255:red, 225; green, 248; blue, 170 }  ,fill opacity=1 ] (334,165.5) .. controls (334,149.76) and (346.76,137) .. (362.5,137) .. controls (378.24,137) and (391,149.76) .. (391,165.5) .. controls (391,181.24) and (378.24,194) .. (362.5,194) .. controls (346.76,194) and (334,181.24) .. (334,165.5) -- cycle ;
+			%Shape: Circle [id:dp6722399802034791] 
+			\draw  [fill={rgb, 255:red, 255; green, 198; blue, 103 }  ,fill opacity=1 ] (396,191.5) .. controls (396,169.13) and (414.13,151) .. (436.5,151) .. controls (458.87,151) and (477,169.13) .. (477,191.5) .. controls (477,213.87) and (458.87,232) .. (436.5,232) .. controls (414.13,232) and (396,213.87) .. (396,191.5) -- cycle ;
+			%Shape: Circle [id:dp8898594961947708] 
+			\draw  [fill={rgb, 255:red, 205; green, 154; blue, 243 }  ,fill opacity=1 ] (477,132.5) .. controls (477,105.16) and (499.16,83) .. (526.5,83) .. controls (553.84,83) and (576,105.16) .. (576,132.5) .. controls (576,159.84) and (553.84,182) .. (526.5,182) .. controls (499.16,182) and (477,159.84) .. (477,132.5) -- cycle ;
+			%Shape: Circle [id:dp4525627905743661] 
+			\draw  [color={rgb, 255:red, 0; green, 0; blue, 0 }  ,draw opacity=1 ][fill={rgb, 255:red, 231; green, 175; blue, 241 }  ,fill opacity=1 ] (341,71) .. controls (341,34.55) and (370.55,5) .. (407,5) .. controls (443.45,5) and (473,34.55) .. (473,71) .. controls (473,107.45) and (443.45,137) .. (407,137) .. controls (370.55,137) and (341,107.45) .. (341,71) -- cycle ;
+			
+			% Text Node
+			\draw (282,209) node [anchor=north west][inner sep=0.75pt]   [align=left] {\textasciitilde 2027};
+			% Text Node
+			\draw (84,68) node [anchor=north west][inner sep=0.75pt]  [font=\Large] [align=left] {\begin{minipage}[lt]{107.2pt}\setlength\topsep{0pt}
+					\begin{center}
+						\textbf{SKA1}\\Science Archive\\600 PB/year
+					\end{center}
+					
+			\end{minipage}};
+			% Text Node
+			\draw (338.83,140.35) node [anchor=north west][inner sep=0.75pt]  [font=\large,rotate=-359.48] [align=left] {\begin{minipage}[lt]{33pt}\setlength\topsep{0pt}
+					\begin{center}
+						\textbf{{\tiny LOFAR}}\\{\tiny 25 PB/year}
+					\end{center}
+					
+			\end{minipage}};
+			% Text Node
+			\draw (357,33) node [anchor=north west][inner sep=0.75pt]  [font=\large] [align=left] {\begin{minipage}[lt]{70.08pt}\setlength\topsep{0pt}
+					\begin{center}
+						Uploads to\\\textbf{Facebook}\\180 PB/year
+					\end{center}
+					
+			\end{minipage}};
+			% Text Node
+			\draw (339,209) node [anchor=north west][inner sep=0.75pt]   [align=left] {2017};
+			% Text Node
+			\draw (484,103) node [anchor=north west][inner sep=0.75pt]   [align=left] {\begin{minipage}[lt]{60pt}\setlength\topsep{0pt}
+					\begin{center}
+						Searches on\\\textbf{{\large Google}}\\98 PB/year
+					\end{center}
+					
+			\end{minipage}};
+			% Text Node
+			\draw (397,172) node [anchor=north west][inner sep=0.75pt]   [align=left] {\begin{minipage}[lt]{53.19pt}\setlength\topsep{0pt}
+					\begin{center}
+						\textbf{CERN}\\73 PB/year
+					\end{center}
+					
+			\end{minipage}};
+			
+			
+		\end{tikzpicture}
+		
+	\end{frame}
+
+	\begin{frame}{Cuanto es 1 PB?}
+		
+			
+			\begin{columns}
+				
+				\begin{column}{0.55\textwidth}
+			
+					\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+					
+					\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+						%uncomment if require: \path (0,235); %set diagram left start at 0, and has height of 235
+						
+						%Shape: Circle [id:dp7446071539455305] 
+						\draw  [fill={rgb, 255:red, 173; green, 229; blue, 241 }  ,fill opacity=1 ] (222,114) .. controls (222,56.56) and (268.56,10) .. (326,10) .. controls (383.44,10) and (430,56.56) .. (430,114) .. controls (430,171.44) and (383.44,218) .. (326,218) .. controls (268.56,218) and (222,171.44) .. (222,114) -- cycle ;
+						
+						% Text Node
+						\draw (249,72) node [anchor=north west][inner sep=0.75pt]  [font=\Large] [align=left] {\begin{minipage}[lt]{107.2pt}\setlength\topsep{0pt}
+								\begin{center}
+									\textbf{SKA1}\\Science Archive\\600 PB/year
+								\end{center}
+								
+						\end{minipage}};
+						
+						
+					\end{tikzpicture}
+			\end{column}
+		
+			\begin{column}{0.48\textwidth}
+				\begin{itemize}
+					\item Si grabas cada segundo de tu vida 24/7 en HD por 3.4 años, entonces el video pesará alrededor de 1 PB
+					\item Si guardas 4000 fotos digitales por día, cada día de tu vida, se requeriría 1 PB.
+				\end{itemize}
+			\end{column}
+		\end{columns}
+		
 	\end{frame}
 
 	\begin{frame}{SKA Science goals}
@@ -405,7 +519,7 @@
 		\end{figure}
 	\end{frame}
 	
-	\begin{frame}{Studying magnetic fields using Faraday Rotation}
+	\begin{frame}{Usando rotacion Faraday}
 		%\footnotesize
 		\begin{columns}
 			
@@ -443,7 +557,7 @@
 		
 	\end{frame}
 	
-	\begin{frame}{Studying magnetic fields using Faraday Rotation}
+	\begin{frame}{Usando rotacion Faraday}
 		%\footnotesize
 		\begin{columns}
 			
@@ -513,10 +627,88 @@
 					\item Las observaciones se realizan sobre un ancho de banda finito $\Delta \lambda^2$.
 					\item Stokes (Q, U) no son observados nativamente en $\lambda^2$.
 					\item Observaciones incompletas debido a la excision de datos para eliminar RFI.
-					\item La relacion en Fourier no es completa ya que $\lambda^2 < 0 $	no existe y $F(\phi)$ no es necesariamente real.
+					\item La relación en Fourier no es completa ya que $\lambda^2 < 0 $	no existe y $F(\phi)$ no es necesariamente real.
 					\item \alert{RUIDO!}
-					\item No todas las senales tienen la misma estructura % Add figure showing example with thick source
+					\item No todas las señales tienen la misma estructura % Add figure showing example with thick source
 				\end{itemize}
+			\end{column}
+		\end{columns}
+		
+	\end{frame}
+
+	\begin{frame}{Caso Abell 1314 - IC708}
+		
+		\begin{columns}
+			\begin{column}{0.48\textwidth}
+				\begin{figure}
+					\centering
+					\includegraphics[width=\textwidth, keepaspectratio]{figures/a1314/plot_overlay.pdf}
+				\end{figure}
+			\end{column}
+			
+			\begin{column}{0.48\textwidth}
+				\begin{figure}
+					\centering
+					\begin{subfigure}{\textwidth}
+						\centering
+						\includegraphics[width=\textwidth, keepaspectratio]{figures/a1314/sources/3/plot_rm.pdf}
+					\end{subfigure}
+					
+					\begin{subfigure}{\textwidth}
+						\centering
+						\includegraphics[width=\textwidth, keepaspectratio]{figures/a1314/sources/3/ic708.pdf}
+					\end{subfigure}
+				\end{figure}			
+			\end{column}
+		\end{columns}
+		\begin{tikzpicture}[overlay, remember picture, scale=0.7]
+			\draw[->, black, very thick, opacity=0.2] (8.2,5.1) to (11,4) node[modernRed, anchor=west] (zoomin) {};
+			%\draw[->, modernRed, very thick, opacity=0.3] (3,11.6) to (3,1) node[modernRed, anchor=west] (noise) {+ Noise};
+		\end{tikzpicture}
+	\end{frame}
+
+	\begin{frame}{MIGHTEE-POL - COSMOS}
+		\begin{figure}
+			\centering
+			\includegraphics[width=.52\textwidth, keepaspectratio]{figures/meerkat/continuum/COSMOS_only_radio.pdf}
+		\end{figure}
+	\end{frame}
+	
+	\begin{frame}{MIGHTEE-POL - COSMOS}
+		
+		\begin{columns}
+			\begin{column}{0.48\textwidth}
+				\begin{figure}
+					\centering
+					\includegraphics[width=\textwidth, keepaspectratio]{figures/meerkat/continuum/COSMOS_only_radio.pdf}
+				\end{figure}
+			\end{column}
+			
+			\begin{column}{0.48\textwidth}
+				\begin{figure}
+					\centering
+					\includegraphics[width=\textwidth, keepaspectratio]{figures/meerkat/pol_vs_peak_flux_density.pdf}
+				\end{figure}			
+			\end{column}
+		\end{columns}
+	\end{frame}
+
+
+	\section{Planetas}
+	\begin{frame}{Como se forman los planetas?}
+		\begin{columns}
+			\begin{column}{0.48\textwidth}
+				\begin{figure}
+					\embedvideo*{\includegraphics[page=1, width=\textwidth, height=.7\textheight, keepaspectratio]{example-movie}}{./videos/dust_nosound.mp4}
+					\caption*{Disco de polvo alrededor de Oph-IRS 48 (Concepcion artistica), ESO/L. Calçada}
+				\end{figure}
+			\end{column}
+			
+			\begin{column}{0.48\textwidth}
+				\begin{figure}
+					\embedvideo*{\includegraphics[page=1, width=\textwidth, height=.7\textheight, keepaspectratio]{example-movie}}{./videos/planet_formation.mp4}
+					\caption*{Formacíon de planetas, NASA}
+				\end{figure}			
 			\end{column}
 		\end{columns}
 		
